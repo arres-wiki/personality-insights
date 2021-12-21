@@ -35,7 +35,7 @@
     <script>
       // v2 personality profile - version can be specified in the constructor for PersonalitySunburstChart
       // but it is not necessary as the default version is currently v2
-      $.getJSON('output1.json', '', function ( profile ) {
+      $.getJSON('1.json', '', function ( profile ) {
         $('#profile1').append('<pre>' + JSON.stringify(profile, null, 2) + '</pre>');
         var chart = new PersonalitySunburstChart({selector:'#sunburstChart1', version: 'v3'});
         chart.show(profile, '');
